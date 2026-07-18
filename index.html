@@ -4,27 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <!-- Koneksyon ak fichye CSS la -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="main-container">
-        <form id="weather-form">
-            <input type="text" id="city-input" placeholder="Entrez une ville..." required>
-            <button type="submit">Rechercher</button>
-        </form>
 
-        <div id="weather-card" class="hidden">
-            <h2 id="city-name"></h2>
+    <!-- Header paj la -->
+    <header class="header">
+        <div class="logo">☁️ Weather Dashboard</div>
+        <nav>
+            <span>Dashboard</span>
+            <span>Forecast</span>
+            <span>Map</span>
+            <span>Alerts</span>
+            <span>⚙️</span>
+        </nav>
+    </header>
+
+    <!-- Kontni prensipal -->
+    <main class="main-content">
+        
+        <!-- Zòn rechèch -->
+        <section class="search-box">
+            <form id="weather-form">
+                <input type="text" id="city-input" placeholder="Search city..." required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Kat meteyo a (li kache pa default) -->
+        <section id="weather-card" class="hidden">
+            <h2 id="city-name">Jacmel, Haiti</h2>
             <p>Current Weather</p>
+            
             <div class="weather-icon">☀️</div>
-            <div id="temperature"></div>
-            <div class="details">
-                <p id="weather-status">Partly Cloudy</p>
-                <p id="wind-speed"></p>
+            
+            <div id="temperature">21.5°C</div>
+            
+            <div class="footer-details">
+                <div class="detail-item">
+                    <span id="weather-status">Partly Cloudy</span>
+                </div>
+                <div class="detail-item">
+                    <span id="wind-speed">14.2 km/h Wind Speed</span>
+                </div>
             </div>
-        </div>
-        <div id="error-message" role="alert"></div>
-    </div>
+            
+            <p class="update-time">Updated just now</p>
+        </section>
+
+    </main>
+
+    <!-- Koneksyon ak fichye JavaScript la -->
     <script src="js/app.js"></script>
 </body>
 </html>
