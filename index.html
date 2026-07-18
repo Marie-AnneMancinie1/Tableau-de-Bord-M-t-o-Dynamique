@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <form id="weather-form">
+            <input type="text" id="city-input" placeholder="Entrez une ville..." required>
+            <button type="submit">Rechercher</button>
+        </form>
+
+        <div id="weather-card" class="hidden">
+            <h2 id="city-name"></h2>
+            <p>Current Weather</p>
+            <div class="weather-icon">☀️</div>
+            <div id="temperature"></div>
+            <div class="details">
+                <p id="weather-status">Partly Cloudy</p>
+                <p id="wind-speed"></p>
+            </div>
+        </div>
+        <div id="error-message" role="alert"></div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
