@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <!-- Koneksyon ak fichye CSS la -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header paj la -->
     <header class="header">
-        <div class="logo">☁️ Weather Dashboard</div>
+        <h1>Weather Dashboard</h1> 
         <nav>
             <span>Dashboard</span>
             <span>Forecast</span>
@@ -21,24 +19,20 @@
         </nav>
     </header>
 
-    <!-- Kontni prensipal -->
     <main class="main-content">
         
-        <!-- Zòn rechèch -->
-        <section class="search-box">
+        <div class="search-box">
             <form id="weather-form">
                 <input type="text" id="city-input" placeholder="Search city..." required>
                 <button type="submit">Search</button>
             </form>
-        </section>
+        </div>
 
-        <!-- Kat meteyo a (li kache pa default) -->
         <section id="weather-card" class="hidden">
             <h2 id="city-name">Jacmel, Haiti</h2>
             <p>Current Weather</p>
             
             <div class="weather-icon">☀️</div>
-            
             <div id="temperature">21.5°C</div>
             
             <div class="footer-details">
@@ -55,7 +49,6 @@
 
     </main>
 
-    <!-- Koneksyon ak fichye JavaScript la -->
     <script src="js/app.js"></script>
 </body>
 </html>
